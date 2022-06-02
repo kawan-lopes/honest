@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+header {
+    color: #fff;
+    height: 9vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    z-index: 1000000;
+}
+
+.logo-navbar {
+    width: 24%;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo-navbar img {
+    height: 40px;
+    margin-left: 40px;
+}
+
+.header-icon {
+    width: 29%;
+    height: 57%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-icon img {
+    height: 100%;
+}
+
+.navbar li a {
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: #0FB18A;
+}
+
+header ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.pesquisa {
+    background: #c4c4c438;
+    border: 1px solid transparent;
+    font-size: 14px;
+    color: #000;
+    height: 23px;
+    background: #c4c4c438;
+    transition: 0.5s ease;
+    width: 15vw;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pesquisa:hover {
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.212);
+}
+
+.divpesquisa {
+    display: flex;
+}
+
+
+/* main */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.vazio {
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../../Imagens/Background/fundoLogin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1000;
+}
+
+.efeito {
+    box-shadow: 35px 0px 200px 300px rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+.conteudo {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulos {
+    color: #fff;
+    height: 150px;
+}
+
+.titulos>h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.titulos>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.campos {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.campos>input {
+    width: 60%;
+    height: 6vh;
+    min-height: 40px;
+    border-radius: 10px;
+    background-color: #595B6340;
+    color: #ffffff;
+    border: none;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.campos>input:hover {
+    background-color: #97979740;
+    transition-duration: 1.5s;
+}
+
+input::placeholder {
+    color: #FFFFFF66;
+    opacity: 0.8;
+}
+
+.enviar {
+    width: 100%;
+    margin-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-enviar {
+    padding: 15px 150px;
+    border-radius: 15px;
+    background-color: #0FB18A;
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.login>p {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.login>a {
+    color: #0FB18A;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 5px;
+}

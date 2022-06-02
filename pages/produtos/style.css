@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{   
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: #fff;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+ 
+}
+
+header{
+    height: 9vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    position: fixed;
+    z-index: 1000;
+    
+    
+}
+
+.logo-navbar {
+    width: 24%;
+    display: flex;
+    cursor: pointer;
+}
+.logo-navbar img{
+    height: 60px;
+    margin-left:40px;
+}
+.header-icon{
+    width: 29%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin-right:20px;
+}
+.header-icon img{
+    height: 100%;
+}
+
+.navbar li a {
+   padding: 20px 25px;
+   font-weight: 600;
+   font-size: 15px;
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all 0.1s ease 0s;
+}
+.navbar li a:hover{
+    color: #0FB18A;
+}
+header ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.pesquisa {
+  background: #c4c4c438;
+  border: 1px solid transparent;
+  font-size: 14px;
+  color: #000;
+  height: 20px;
+  background: #c4c4c438;
+  transition: 0.5s ease;
+  width: 15vw;  
+  border-radius: 10px;
+  padding: 5px;
+}
+.pesquisa:hover {
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.212);
+   
+}
+
+.divpesquisa{
+    display: flex;
+}
+
+  
+
+.preco{
+    margin:10px 0 ;
+    color: #0FB18A;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.containerMain{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divFiltro{
+    margin-top:60px;
+    width: 15%;
+    height: 91%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(15, 158, 177, 0.97) 29.69%, #0FB18A 66.15%);
+    border-radius: 0px 50px 50px 0px;
+}
+.divFiltro h1,h3{
+    font-weight: 700;
+}
+
+.txtFiltrar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcas{
+    width: 100%;
+    background-color: transparent;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.icons-marcas{
+    width: 100%;
+    height: 82%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons-marcas img {
+    width: 40px;
+}
+
+.tamanhos{
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.numTamanhos{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.numTamanhos ul{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.numTamanhos ul li {
+    margin: 0 8px 0 0;
+    font-size: 13px;
+    font-weight:600 ;
+    border: 1px solid #000;
+    padding: 3.5px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+
+.numTamanhos ul li:hover{
+    background: #fff;
+    border: 1px solid transparent;
+}
+
+.numTamanhos ul li:active {
+    color: #0FB18A;
+    border: 1px solid #000;
+}
+
+.flexProdutos{
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    overflow:hidden;
+}
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 99%;
+    background-color: #fff;
+    height: 99%;
+    flex-direction: row;
+}
+
+.FlexContainer div {
+    width: 270px;
+    height: 204px;
+    margin: 10px 10px;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FlexContainer div img {
+    width: 170px;
+    margin: 15px 0px;
+}
+
+
+.FlexContainer div p {
+    color: #0FB18A;
+    font-weight: 700;
+}
+
+.FlexContainer div h2 {
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+}

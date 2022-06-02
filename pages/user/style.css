@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+header {
+    color: #fff;
+    height: 9vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    z-index: 1000000;
+}
+
+.logo-navbar {
+    width: 24%;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo-navbar img {
+    height: 40px;
+    margin-left: 40px;
+}
+
+.header-icon {
+    width: 29%;
+    height: 57%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-icon img {
+    height: 100%;
+}
+
+.navbar li a {
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: #0FB18A;
+}
+
+header ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.pesquisa {
+    background: #c4c4c438;
+    border: 1px solid transparent;
+    font-size: 14px;
+    color: #000;
+    height: 23px;
+    background: #c4c4c438;
+    transition: 0.5s ease;
+    width: 15vw;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pesquisa:hover {
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.212);
+}
+
+.divpesquisa {
+    display: flex;
+}
+
+
+/* main */
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    position: relative;
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itens {
+    top: 200px;
+    position: absolute;
+    width: 80%;
+    height: 250px;
+    box-shadow: 0px 0px 20px rgba(169, 169, 169, 0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selecionar.active {
+    color: #0FB18A;
+    border-left: 5px solid #0FB18A;
+}
+
+.selecionar {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.endereco {
+    width: 65%;
+    height: 100vh;
+}
