@@ -1,3 +1,22 @@
+<?php
+    session_start();
+    // print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('location: ../login/login.html');
+    };
+    if(isset($_POST['sair']))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('location: ../login/login.html');
+    }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,7 +32,7 @@
 <body>
     <header>
         <div class="logo-navbar">
-            <a href="./index.html">
+            <a href="../../index.html">
                 <p>logo</p>
             </a>
         </div>
@@ -51,7 +70,7 @@
                     <input type="text" name="sobrenome">
                 </div>
                 <div class="line-two">
-                    <h3>Numero de telegone</h3>
+                    <h3>Numero de telefone</h3>
                     <input type="text" name="ddd-telefone">
                     <input type="text" name="telefone">
                 </div>
@@ -70,7 +89,7 @@
                     <input type="text" name="adicional">
                 </div>
                 <div class="btn">
-                    <button type="submit">SALVAR</button>
+                    <input name="sair" value="sair" type="submit">
                 </div>
             </form>
         </div>
