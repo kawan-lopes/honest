@@ -31,67 +31,97 @@
 
 <body>
     <header>
-        <div class="logo-navbar">
-            <a href="../../index.html">
-                <p>logo</p>
-            </a>
-        </div>
-        <nav>
-            <ul class="navbar">
-                <li><a href="../../indexProd.html">SNEARKERS</a></li>
-                <li><a href="#drops">DROPS</a></li>
-                <li><a href="#">MARCAS</a></li>
-            </ul>
-        </nav>
-        <div class="header-icon">
-            <div class="divpesquisa">
-                <input type="text" placeholder="   Pesquisar" class="pesquisa" />
+        <div class="div-Header">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../Imagens/Logo/logoUser.png" alt=""></a>
             </div>
-            <img src="../../Imagens/Icons/PesquisaBlack.png" alt="" />
-            <img src="../../Imagens/Icons/shoppingbagBlack.png" alt="" />
-            <a href="../user/user.php"><img src="../../Imagens/Icons/userBlack.png" alt="" /></a>
+            <div class="header-names">
+                <ul>
+                    <a href="./pages/produtos/index.html">
+                        <li>SNEARKERS</li>
+                    </a>
+                    <a href="#drops">
+                        <li>DROPS</li>
+                    </a>
+                    <a>
+                        <li>MARCAS</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="header-icons">
+                <input type="search" placeholder="Pesquisar.." />
+                <div class="icons">
+                    <a><img src="../../Imagens/Icons/PesquisaWhite.png" alt=""> </a>
+                    <a><img src="../../Imagens/Icons/shoppingbagWhite.png" alt=""></a>
+                    <a href="../user/user.php"><img src="../../Imagens/Icons/userWhite.png" alt=""></a>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <div class="menu">
             <div class="itens" id="itens">
-                <h1 id="endereco" class="selecionar active">Meu endereço</h1>
+                <h1 id="perfil" class="selecionar active">Meu perfil</h1>
+                <h1 id="endereco" class="selecionar">Endereço</h1>
                 <h1 id="pedidos" class="selecionar">Meus pedidos</h1>
+                <form action="#" method="POST">
+                    <input type="submit" name="sair" value="sair">
+                </form>
+            </div>
+            
+        </div>
+        <div class="collun">
+            <div class="user">
+                <div class="user_left">
+                    <h1>kawan lopes</h1>
+                    <p>kawan@gmail.com</p>
+                </div>
+                <div class="user_rigth">
+                    <div class="circulo"></div>
+                </div>
             </div>
 
-        </div>
-        <div class="endereco">
-            <h1>Meu endereço</h1>
-            <form class="conteudo" action="#" method="post">
+            <div class="endereco">
                 <div class="line-one">
-                    <h3>Primeiro nome</h3>
-                    <input type="text" name="first-name">
-                    <h3>sobrenome</h3>
-                    <input type="text" name="sobrenome">
+                    <h1>Meu endereço</h1>
                 </div>
                 <div class="line-two">
-                    <h3>Numero de telefone</h3>
-                    <input type="text" name="ddd-telefone">
-                    <input type="text" name="telefone">
+                    <div class="left">
+                        <h1>Nome</h1>
+                        <p>kawan pereira lopes</p>
+                    </div>
+                    <div class="rigth">
+                        <h1>Numero de telefone</h1>
+                        <p>47999884224</p>
+                    </div>
                 </div>
-                <div class="line-three">
-                    <h3>endereço</h3>
-                    <input type="text" name="endereco">
+                <div class="line-tree">
+                    <h1>Endereço</h1>
+                    <p>bla bla bla</p>
                 </div>
-                <div class="line-four">
-                    <h3>Estado</h3>
-                    <input type="text" name="estado" placeholder="Digite o estado">
-                    <h3>Cidade</h3>
-                    <input type="text" name="cidade" placeholder="Digite a cidade">
+                <div class="line-fout">
+                    <div class="left">
+                        <h1>Estado</h1>
+                        <p>Santa Catarina</p>
+                    </div>
+                    <div class="rigth">
+                        <h1>Cidade</h1>
+                        <p>joinville</p>
+                    </div>
+                    <div class="line-five">
+                        <h1>Informaçoes adicionais</h1>
+                        <p>bla bla bla bla bla bla
+                             bla bla bla
+                             bla bla bla
+                             bla bla bla
+                             bla bla bla
+                             bla bla bla
+                             bla bla bla
+                             bla bla bla
+                             bla bla bla </p>
+                    </div>
                 </div>
-                <div class="line-five">
-                    <h3>Informaçoes adicionais</h3>
-                    <input type="text" name="adicional">
-                </div>
-                <div class="btn">
-                    <input name="sair" value="sair" type="submit">
-                </div>
-            </form>
+            </div>
         </div>
     </main>
     <script src="./app.js"></script>

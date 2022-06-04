@@ -26,9 +26,9 @@ body {
 
 .tela-principal {
     width: 100vw;
-    height: 91vh;
+    height: 82vh;
     background-color: #fff;
-    background-image: url(./Imagens/Background/back1.jpg);
+    background-image: url(./Imagens/Background/newBackground2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,6 +44,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 1000;
 }
 
 .div-Header {
@@ -122,11 +124,11 @@ header {
 
 .header-icons input {
     border: 1px solid transparent;
-    background-color: rgba(129, 122, 122, 0.384);
-    border-radius: 5px;
-    width: 50%;
-    height: 50%;
-    padding: 7px;
+    background-color: rgba(129, 122, 122, 0.322);
+    border-radius: 20px;
+    width: 60%;
+    height: 60%;
+    padding: 10px;
     color: #fff;
 }
 
@@ -141,7 +143,7 @@ header {
 /*============= TEXTO CENTER HOME =============*/
 
 .content {
-    color: #fbfcfd;
+    color: #000;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
@@ -158,8 +160,8 @@ header {
 .button2 {
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #000;
+    color: #000;
     padding: 14px 80px;
     position: relative;
     overflow: hidden;
@@ -459,7 +461,7 @@ section .card .image img:hover {
 .card1:hover {
     border: 1px solid transparent;
     opacity: 100%;
-    box-shadow: 7px 9px 4px -1px rgba(0, 0, 0, 0.68);
+    box-shadow: 8px 12px 19px -8px #000000;
 }
 
 .card-img1 {
@@ -565,7 +567,7 @@ section .card .image img:hover {
 .card2:hover {
     border: 1px solid transparent;
     opacity: 100%;
-    box-shadow: 7px 9px 4px -1px rgba(0, 0, 0, 0.68);
+    box-shadow: 8px 12px 19px -8px #000000;
 }
 
 .card-img2 {
@@ -670,7 +672,7 @@ section .card .image img:hover {
 .card3:hover {
     border: 1px solid transparent;
     opacity: 100%;
-    box-shadow: 7px 9px 4px -1px rgba(0, 0, 0, 0.68);
+    box-shadow: 8px 12px 19px -8px #000000;
 }
 
 .card-img3 {

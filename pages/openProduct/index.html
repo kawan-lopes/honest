@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Honest.com</title>
+    <title>Honest</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="tela-principal">
-        <header>
-            <div class="logo-navbar">
-                <img href="./index.html" src="../../Imagens/Logo/LogoHNTblack.png" alt="">
+    <header>
+        <div class="div-Header">
+            <div class="logo">
+                <img src="../../Imagens/Logo/LogoHNTblack.png" alt="">
             </div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="./indexProd.html">SNEARKERS</a></li>
-                    <li><a href="#drops">DROPS</a></li>
-                    <li><a href="#">MARCAS</a></li>
+            <div class="header-names">
+                <ul>
+                    <a href="../../pages/produtos/index.html">
+                        <li>SNEARKERS</li>
+                    </a>
+                    <a href="#drops">
+                        <li>DROPS</li>
+                    </a>
+                    <a>
+                        <li>MARCAS</li>
+                    </a>
                 </ul>
-            </nav>
-            <div class="header-icon">
-                <div class="divpesquisa">
-                    <input type="text" placeholder="   Pesquisar" class="pesquisa">
-                </div>
-                <img src="../../Imagens/Icons/PesquisaBlack.png" alt="">
-                <img src="../../Imagens/Icons/shoppingbagBlack.png" alt="">
-                <img src="../../Imagens/Icons/userBlack.png" alt="">
             </div>
-        </header>
-
-        <div class="conteudo">
-             <div class="nomeProd">
-                <p>NIKE DUNK LOW </p><p class="orange">ORANGE</p>
-            </div>
-             <div class="prod">
-                 <img src="../../Imagens/Cards/Nike_Dunk_Low_Orange_Paisley.png" alt="">
-             </div>
-
-            <div class="info">
-                <h1>R$ 1.990,00</h1>
-                <div class="tamanho">
-                    <p>ESCOLHA O SEU TAMANHO</p>
-                        <ul>
-                            <li>34</li>
-                            <li>35</li>
-                            <li>36</li>
-                            <li>37</li>
-                            <li>38</li>
-                            <li>39</li>
-            <br>
-                            <li>40</li>
-                            <li>41</li>
-                            <li class="active">42</li>
-                            <li>43</li>
-                            <li>44</li>
-                            <li>45</li>
-                        
-                    
-                    </ul>
+            <div class="header-icons">
+                <input type="search" placeholder="Pesquisar.." />
+                <div class="icons">
+                    <a href=""><img src="../../Imagens/Icons/PesquisaBlack.png" alt=""> </a>
+                    <a href=""><img src="../../Imagens/Icons/shoppingbagBlack.png" alt=""></a>
+                    <a href="./pages/user/user.php"><img src="../../Imagens/Icons/userBlack.png" alt=""></a>
                 </div>
-                <div class="quantidade">
-                        <ul class="qtd">
-                            <p>QUANTIDADE</p>
-                                <li>+</li>
-                                <li class="sla">1</li>
-                                <li>-</li>
-                        
-                        </ul>
-                </div>
-
-                <button type="submit">COMPRAR</button>
-
             </div>
-        </div>  
+        </div>
+    </header>
+
+    <div class="conteudo">
+        <div class="nomeProd">
+            <p>NIKE DUNK LOW </p>
+            <p class="orange">ORANGE</p>
+        </div>
+        <div class="prod">
+            <img src="../../Imagens/Cards/Nike_Dunk_Low_Orange_Paisley.png" alt="">
+        </div>
+
+        <div class="info">
+            <h1>R$ 1.990,00</h1>
+            <div class="tamanho">
+                <p>ESCOLHA O SEU TAMANHO</p>
+                <ul>
+                    <li>34</li>
+                    <li>35</li>
+                    <li>36</li>
+                    <li>37</li>
+                    <li>38</li>
+                    <li>39</li>
+                    <br>
+                    <li>40</li>
+                    <li>41</li>
+                    <li class="active">42</li>
+                    <li>43</li>
+                    <li>44</li>
+                    <li>45</li>
+
+
+                </ul>
+            </div>
+            <div class="quantidade">
+                <ul class="qtd">
+                    <p>QUANTIDADE</p>
+                    <li>+</li>
+                    <li class="sla">1</li>
+                    <li>-</li>
+
+                </ul>
+            </div>
+
+            <button type="submit">COMPRAR</button>
+
+        </div>
+    </div>
 
 </body>
+
 </html>

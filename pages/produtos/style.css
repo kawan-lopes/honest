@@ -1,112 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-*{   
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
-    
 }
 
-body{
+body {
     background-color: #fff;
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    
- 
 }
 
-header{
-    height: 9vh;
+header {
     width: 100vw;
+    height: 10vh;
+    background: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background: #fff;
-    position: fixed;
     z-index: 1000;
-    
-    
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.logo-navbar {
-    width: 24%;
-    display: flex;
-    cursor: pointer;
-}
-.logo-navbar img{
-    height: 60px;
-    margin-left:40px;
-}
-.header-icon{
-    width: 29%;
-    height: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-    margin-right:20px;
-}
-.header-icon img{
-    height: 100%;
-}
-
-.navbar li a {
-   padding: 20px 25px;
-   font-weight: 600;
-   font-size: 15px;
-   color: #000;
-   text-decoration: none;
-   cursor: pointer;
-   transition: all 0.1s ease 0s;
-}
-.navbar li a:hover{
-    color: #0FB18A;
-}
-header ul{
-    width: 50%;
+.div-Header {
+    width: 100%;
+    height: 90%;
+    background: transparent;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     flex-direction: row;
-
 }
 
-.pesquisa {
-  background: #c4c4c438;
-  border: 1px solid transparent;
-  font-size: 14px;
-  color: #000;
-  height: 20px;
-  background: #c4c4c438;
-  transition: 0.5s ease;
-  width: 15vw;  
-  border-radius: 10px;
-  padding: 5px;
-}
-.pesquisa:hover {
-    background: #fff;
-    border: 1px solid transparent;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.212);
-   
-}
-
-.divpesquisa{
+.logo {
+    width: 20%;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-  
-
-.preco{
-    margin:10px 0 ;
-    color: #0FB18A;
-    font-weight: 600;
+.logo img {
+    width: 140px;
     cursor: pointer;
 }
 
+.header-names {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
+.header-names ul {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-.containerMain{
+.header-names ul li {
+    color: #000;
+    font-size: 1.0rem;
+    transition: color 0.2s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header-names li:hover {
+    color: #0FB18A;
+}
+
+.header-names li:active {
+    color: #0FB18A;
+}
+
+.header-icons {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icons {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-icons input {
+    border: 1px solid transparent;
+    background-color: rgba(129, 122, 122, 0.384);
+    border-radius: 20px;
+    width: 60%;
+    height: 60%;
+    padding: 10px;
+    color: #fff;
+}
+
+.icons img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.containerMain {
     width: 100vw;
     height: 100vh;
     background-color: #fff;
@@ -115,8 +126,8 @@ header ul{
     justify-content: space-between;
 }
 
-.divFiltro{
-    margin-top:60px;
+.divFiltro {
+    margin-top: 60px;
     width: 15%;
     height: 91%;
     background-color: #fff;
@@ -127,11 +138,13 @@ header ul{
     background: linear-gradient(180deg, rgba(15, 158, 177, 0.97) 29.69%, #0FB18A 66.15%);
     border-radius: 0px 50px 50px 0px;
 }
-.divFiltro h1,h3{
+
+.divFiltro h1,
+h3 {
     font-weight: 700;
 }
 
-.txtFiltrar{
+.txtFiltrar {
     width: 100%;
     height: 10%;
     display: flex;
@@ -139,7 +152,7 @@ header ul{
     align-items: center;
 }
 
-.marcas{
+.marcas {
     width: 100%;
     background-color: transparent;
     height: 17%;
@@ -147,9 +160,9 @@ header ul{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
-.icons-marcas{
+
+.icons-marcas {
     width: 100%;
     height: 82%;
     background-color: transparent;
@@ -164,7 +177,7 @@ header ul{
     width: 40px;
 }
 
-.tamanhos{
+.tamanhos {
     width: 100%;
     height: 30%;
     background-color: transparent;
@@ -174,7 +187,7 @@ header ul{
     overflow: hidden;
 }
 
-.numTamanhos{
+.numTamanhos {
     width: 100%;
     height: 90%;
     display: flex;
@@ -184,28 +197,26 @@ header ul{
     overflow: hidden;
 }
 
-.numTamanhos ul{
+.numTamanhos ul {
     display: flex;
     flex-direction: row;
     width: 50%;
     height: 5%;
     justify-content: center;
     align-items: center;
-
 }
 
 .numTamanhos ul li {
     margin: 0 8px 0 0;
     font-size: 13px;
-    font-weight:600 ;
+    font-weight: 600;
     border: 1px solid #000;
     padding: 3.5px;
     cursor: pointer;
     transition: ease 0.2s;
 }
 
-
-.numTamanhos ul li:hover{
+.numTamanhos ul li:hover {
     background: #fff;
     border: 1px solid transparent;
 }
@@ -215,7 +226,7 @@ header ul{
     border: 1px solid #000;
 }
 
-.flexProdutos{
+.flexProdutos {
     width: 70%;
     height: 100%;
     background-color: transparent;
@@ -224,7 +235,7 @@ header ul{
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .FlexContainer {
@@ -255,7 +266,6 @@ header ul{
     width: 170px;
     margin: 15px 0px;
 }
-
 
 .FlexContainer div p {
     color: #0FB18A;

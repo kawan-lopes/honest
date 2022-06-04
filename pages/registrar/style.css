@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,83 +15,106 @@ body {
 }
 
 header {
-    color: #fff;
-    height: 9vh;
     width: 100vw;
+    height: 10vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.div-Header {
+    width: 100%;
+    height: 90%;
+    background: transparent;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    background: rgba(0, 0, 0, 0);
-    position: fixed;
-    z-index: 1000000;
-}
-
-.logo-navbar {
-    width: 24%;
-    display: flex;
-    cursor: pointer;
-}
-
-.logo-navbar img {
-    height: 40px;
-    margin-left: 40px;
-}
-
-.header-icon {
-    width: 29%;
-    height: 57%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-}
-
-.header-icon img {
-    height: 100%;
-}
-
-.navbar li a {
-    padding: 20px 25px;
-    font-weight: 600;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.navbar li a:hover {
-    color: #0FB18A;
-}
-
-header ul {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
     flex-direction: row;
 }
 
-.pesquisa {
-    background: #c4c4c438;
-    border: 1px solid transparent;
-    font-size: 14px;
-    color: #000;
-    height: 23px;
-    background: #c4c4c438;
-    transition: 0.5s ease;
-    width: 15vw;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.pesquisa:hover {
-    background: #fff;
-    border: 1px solid transparent;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.212);
-}
-
-.divpesquisa {
+.logo {
+    width: 20%;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    cursor: pointer;
+}
+
+.header-names {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-names ul {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-names ul li {
+    color: #ffff;
+    font-size: 1.0rem;
+    transition: color 0.2s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header-names li:hover {
+    color: #0FB18A;
+}
+
+.header-names li:active {
+    color: #0FB18A;
+}
+
+.header-icons {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icons {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-icons input {
+    border: 1px solid transparent;
+    background-color: rgba(129, 122, 122, 0.384);
+    border-radius: 20px;
+    width: 60%;
+    height: 60%;
+    padding: 10px;
+    color: #fff;
+}
+
+.icons img {
+    width: 30px;
+    cursor: pointer;
 }
 
 
@@ -116,7 +139,7 @@ main {
 
 .efeito {
     box-shadow: 35px 0px 200px 300px rgb(0, 0, 0);
-    z-index: 1000;
+    z-index: 100;
 }
 
 .conteudo {
@@ -192,6 +215,7 @@ input::placeholder {
     font-style: italic;
     font-weight: 700;
     font-size: 24px;
+    cursor: pointer
 }
 
 .login {
