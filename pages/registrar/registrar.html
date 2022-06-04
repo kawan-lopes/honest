@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="pt_br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>registro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -37,24 +38,26 @@
             <!-- <img src="../../Imagens/Background/fundoLogin.png" alt=""> -->
         </div>
         <div class="efeito">
-            <form class="conteudo" action="testelogin.php" method="POST">
+            <form class="conteudo" action="testeregistro.php" method="POST">
                 <div class="titulos">
-                    <h1>FAÇA LOGIN</h1>
-                    <p>E compre os melhores produtos</p>
+                    <h1>CRIE SUA CONTA</h1>
+                    <p>E fique por dentro das novidades</p>
                 </div>
                 <div class="campos">
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
                     <input type="email" name="email" placeholder="Digite seu email" required>
                     <input type="password" name="senha" placeholder="Digite seu senha" required>
                 </div>
                 <div class="enviar">
-                    <button id="btn-enviar" name="submit" type="submit">ENTRAR</button>
+                    <input id="btn-enviar" name="submit" type="submit">CRIAR</input>
                 </div>
                 <div class="login">
-                    <p>Não possui conta?</p>
-                    <a href="../registrar/registrar.html">Criar conta</a>
+                    <p>Já possui conta?</p>
+                    <a href="../login/login.html">Faça login</a>
                 </div>
             </form>
         </div>
+
     </main>
 </body>
 
